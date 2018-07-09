@@ -3,7 +3,10 @@
   return_value = false
   if board[index] == "X" || board[index] == "O"
     return_value = true
-  elseif board[index] == " " || board[index] == "" || board[index] == nil
-    false
+  else if board[index] == " " || board[index] == "" || board[index] == nil
+     return_value = false
+  else 
+    return_value = false
   end
+  return return_value
 end
